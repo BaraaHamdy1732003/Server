@@ -11,7 +11,7 @@ import java.io.IOException;
 public class SignInServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        req.getRequestDispatcher("src/main/webapp/WEB-INF/jsp/singIn.jsp").forward(req, resp);
+        req.getRequestDispatcher("singIn.jsp").forward(req, resp);
     }
 
     @Override

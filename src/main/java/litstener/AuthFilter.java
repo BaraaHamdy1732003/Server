@@ -37,7 +37,7 @@ public class AuthFilter implements Filter {
             filterChain.doFilter(request, response);
         } else if (isAuthenticated && isLoginPage) {
             // пользователь авторизован и просит страницу авторизации
-            response.sendRedirect("/");
+            response.sendRedirect("/minimal");
         } else {
             // не авторизован и просит другие страницы
             response.sendRedirect("/signIn");
